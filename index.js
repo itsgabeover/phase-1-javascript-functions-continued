@@ -1,19 +1,14 @@
 // Your code here
-function saturdayFun(activity){
-    if (activity == null){
-        return `This Saturday, I want to roller-skate!`;
-    } else {
-        return `This Saturday, I want to ${activity}!`;
-    }
+
+const mondayWork = function(activity = 'go to the office') {
+    return `This Monday, I will ${activity}.`
 }
 
-function mondayWork(activity){
-    if (activity == null){
-        return `This Monday, I will go to the office.`;
-    } else {
-        return `This Monday, I will ${activity}.`;
-    }
+const saturdayFun = function(activity = 'roller-skate') {
+    return `This Saturday, I want to ${activity}!`
 }
+
+
 
 function wrapAdjective(specialChar = '*'){
     return function(adjective = 'special') {
